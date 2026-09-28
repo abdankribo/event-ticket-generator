@@ -1,0 +1,1 @@
+pub struct Ticket{pub id:String,pub person:String,pub event:String}pub fn verify<'a>(t:&'a[Ticket],id:&str)->Option<&'a Ticket>{t.iter().find(|x|x.id==id)}
