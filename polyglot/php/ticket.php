@@ -1,0 +1,1 @@
+<?php function ticketId():string{return'PASS-'.random_int(100000,999999);}function verify(array$t,string$id):?array{foreach($t as$x)if(($x['id']??'')===$id)return$x;return null;}
