@@ -1,0 +1,1 @@
+import kotlin.random.Random;data class Ticket(val id:String,val person:String,val event:String);fun ticketId()="PASS-"+Random.nextInt(100000,1000000);fun verify(t:List<Ticket>,id:String)=t.find{it.id==id}
