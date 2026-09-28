@@ -1,0 +1,1 @@
+using System;using System.Collections.Generic;using System.Linq;public record Ticket(string Id,string Person,string Event);public static class TicketLogic{public static string NewId()=>"PASS-"+Random.Shared.Next(100000,1000000);public static Ticket? Verify(IEnumerable<Ticket> t,string id)=>t.FirstOrDefault(x=>x.Id==id);}
